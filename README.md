@@ -25,7 +25,7 @@ INSTALLED_APPS = (
 Add the required URL pattern:
 
 ```python
-url(r'^locking/', include('locking.urls')),
+re_path(r'^locking/', include('locking.urls')),
 ```
 
 ## Usage
