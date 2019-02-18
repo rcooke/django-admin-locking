@@ -25,7 +25,8 @@ class LockingManager(QueryMixin, models.Manager):
 
     def delete_expired(self):
         """Delete all expired locks from the database"""
-        self.filter(date_expires__lt=timezone.now()).delete()
+        mystr =  self.filter(date_expires__lt=timezone.now()).delete()
+        return mystr[0]
 
     def lock_for_user(self, content_type, object_id, user):
         """
