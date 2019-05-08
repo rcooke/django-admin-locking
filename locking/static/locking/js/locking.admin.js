@@ -24,6 +24,7 @@
         this.api.ajax({success: function (data) {
             var user, name, lockedClass, lockedMessage;
             $('.locking-status.locked').removeClass('locked').removeAttr('title');
+            $('.locking-status.editing').removeClass('editing').removeAttr('title');
             for (var i = 0; i < data.length; i++) {
                 user = data[i]['locked_by'];
                 // Occasionally the user will be logged out but will still have a browser tab
