@@ -9,7 +9,8 @@ Prevents users from overwriting each others changes in Django.
 Django Admin Locking is tested in the following environments
 
 * Python (2.7, 3.4, 3.5, 3.6, 3.7)
-* Django (1.11, 2.0, 2.1)
+* Django (1.11, 2.0, 2.1, 2.2)
+* Grappelli (2.13)
 
 ## Installation
 
